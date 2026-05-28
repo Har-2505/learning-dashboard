@@ -1,6 +1,7 @@
 import Sidebar from "@/components/Sidebar";
 import DashboardCards from "@/components/DashboardCards";
 import CourseProgress from "@/components/CourseProgress";
+import ActivitySection from "@/components/ActivitySection";
 
 export default function Home() {
   return (
