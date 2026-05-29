@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Learning Dashboard
 
-## Getting Started
+A modern learning dashboard built using Next.js, Tailwind CSS, Supabase, and Framer Motion.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+* Responsive dashboard UI
+* Sidebar navigation
+* Course progress tracking
+* Recent activity section
+* Supabase database integration
+* Modern dark theme
+* Animated UI components
+
+## Tech Stack
+
+* Next.js 16
+* React
+* Tailwind CSS
+* TypeScript
+* Supabase
+* Framer Motion
+* Lucide React
+
+## Architecture Choices
+
+The project uses the Next.js App Router structure.
+
+* Components are separated into reusable sections such as Sidebar, CourseProgress, and ActivitySection.
+* Supabase client configuration is managed inside the `lib` folder for clean code organization.
+* Tailwind CSS was used for fast and responsive UI styling.
+
+## Server / Client Component Split
+
+Client components were used where interactivity and React hooks were needed.
+
+Examples:
+
+* CourseProgress component uses `useEffect` and `useState` to fetch Supabase data.
+* Sidebar component uses state management for menu interactions.
+
+Static layout rendering is handled by Next.js app structure.
+
+## Challenges Faced
+
+* Initial Supabase connection issues
+* TypeScript type errors during deployment
+* Missing package errors during Vercel build
+* Understanding deployment environment variables
+
+These were resolved by:
+
+* Proper environment variable configuration
+* Installing required dependencies
+* Fixing TypeScript state typing
+* Updating deployment settings on Vercel
+
+## Environment Variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=https://itwegztgmovdhtumcayo.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml0d2VnenRnbW92ZGh0dW1jYXlvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5ODU5NDIsImV4cCI6MjA5NTU2MTk0Mn0.tVP4UdGtlMzAxrCtYVYkflOS89ux5pFuRjh58Lizy8M
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Local Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## GitHub Repository
 
-## Learn More
+https://github.com/Har-2505/learning-dashboard
 
-To learn more about Next.js, take a look at the following resources:
+## Live Demo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://learning-dashboard-xi-sepia.vercel.app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Harshit Kumar  Srivastav
