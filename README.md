@@ -55,14 +55,7 @@ These were resolved by:
 * Fixing TypeScript state typing
 * Updating deployment settings on Vercel
 
-## Environment Variables
 
-Create a `.env.local` file:
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=https://itwegztgmovdhtumcayo.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml0d2VnenRnbW92ZGh0dW1jYXlvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5ODU5NDIsImV4cCI6MjA5NTU2MTk0Mn0.tVP4UdGtlMzAxrCtYVYkflOS89ux5pFuRjh58Lizy8M
-```
 
 ## Local Setup
 
